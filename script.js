@@ -27,11 +27,11 @@ let columns = Math.floor(window.innerWidth / fontSize);
 let drops = Array(columns).fill(1);
 
 function draw() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.13)";
+  ctx.fillStyle = "rgba(10, 25, 47, 0.13)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   ctx.font = fontSize + "px monospace";
-  ctx.fillStyle = "#00ff41";
+  ctx.fillStyle = "#00ffff";
   for (let i = 0; i < drops.length; i++) {
     let text = letters.charAt(Math.floor(Math.random() * letters.length));
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
